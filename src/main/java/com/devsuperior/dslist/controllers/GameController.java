@@ -30,4 +30,9 @@ public class GameController {
 		List<GameMinDTO> result = gameService.findAll();	
 		return result;
 	}
+	
+	@GetMapping("/test")
+	public String test() {
+	    return "ok";
+	}
 }
